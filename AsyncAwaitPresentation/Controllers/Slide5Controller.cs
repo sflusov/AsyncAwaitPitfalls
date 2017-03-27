@@ -9,7 +9,7 @@ namespace AsyncAwaitPresentation.Controllers
 
         private async void VoidDelay()
         {
-            await Task.Delay(_delayTimeout);
+            await Task.Delay(_delayTimeout - 1000);
         }
 
         public async Task GetMethodWithAwait()
